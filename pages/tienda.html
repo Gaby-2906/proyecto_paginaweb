@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/logo1_icon.ico">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Tienda Oficial | Mundo de Aventura</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-de-navegacion">
+            <ul>
+                <li class="item-logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="logo principal">
+                    </a>
+                </li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Acerca-de.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="item-carrito">
+                    <button id="boton-abrir-carrito" class="btn-carrito-nav">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="contador-carrito">0</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tienda-encabezado">
+    <h1 class="titulo-seccion">Tienda Oficial</h1>
+    <p class="subtitulo-seccion">Mundo de Aventura- Edición Especial Argentina</p>
+     </div>
+
+        <div class="filtros" id="filtros-container">
+            </div>
+
+        <main class="contenedor-grid-productos" id="contenedor-productos">
+            <div class="cargando">
+                <i class="fas fa-spinner fa-spin"></i> Cargando experiencias...
+            </div>
+        </main>
+    </div>
+
+    <div id="modal-carrito" class="modal">
+        <div class="contenido-modal">
+            <div class="encabezado-modal">
+                <h3>Tu Carrito de Compras</h3>
+                <button id="boton-cerrar-carrito" class="cerrar-modal">&times;</button>
+            </div>
+            
+            <div id="carrito-vacio" class="carrito-vacio-msg">
+                <i class="fas fa-shopping-basket"></i>
+                <p>El carrito está vacío.</p>
+            </div>
+
+            <div id="cuerpo-tabla-carrito" class="d-none">
+                <table class="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Precio</th>
+                            <th>Cant.</th>
+                            <th>Subtotal</th>
+                            <th>Quitar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-lista-carrito">
+                        </tbody>
+                </table>
+                <div class="total-seccion">
+                    <p>Total a pagar: <span id="total-precio-carrito">$0</span></p>
+                </div>
+                <button id="btn-comprar" class="boton-finalizar">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="footer-contenedor-columnas">
+            <div class="columna-footer">
+                <h3>Mundo Aventura</h3>
+                <p>"El límite de la diversión lo pones tú."</p>
+            </div>
+
+            <div class="columna-footer">
+                <h3>¡Seguinos en las redes!</h3>
+                <div class="redes-footer">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+                
+                <div class="medios-pago">
+                    <p>Medios de pago online:</p>
+                    <div class="logos-pagos-flex">
+                        <i class="fab fa-cc-visa" title="Tarjeta de Crédito / Débito"></i>
+                        <i class="fab fa-cc-mastercard" title="Tarjeta de Crédito / Débito"></i>
+                        <img src="../img/logo-mercado-pago.jpg" alt="Mercado Pago" title="Mercado Pago" class="img-pago">
+                        <img src="../img/logo_cuenta_dni.jpg" alt="Cuenta DNI" title="Cuenta DNI" class="img-pago">
+                        <i class="fas fa-wallet" title="Otras Billeteras Virtuales"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columna-footer">
+                <h3>¿Dónde estamos?</h3>
+                <p class="direccion-footer">
+                    Av. Dr. Ignacio Arieta 3000, San Justo, La Matanza
+                </p>
+                <div class="contenedor-iframe">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Av.%20Dr.%20Ignacio%20Arieta%203000,%20San%20Justo&t=&z=13&ie=UTF-8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="180" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div> 
+        <hr class="separador-footer">
+        <p class="copyright">© 2026 Mundo de Aventura. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="tienda.js"></script>
+</body>
+</html>

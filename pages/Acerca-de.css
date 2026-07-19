@@ -1,0 +1,205 @@
+.seccion-principal-acercade {
+    padding: 60px 20px;
+    background-color: #f0fdf4; /* Fondo verde suave unificado */
+    font-family: sans-serif;
+}
+
+.acercade-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.acercade-encabezado .titulo-seccion {
+    font-size: 32px;
+    color: #054b14; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.acercade-encabezado .subtitulo-seccion {
+    font-size: 16px;
+    color: #666666;
+}
+
+.contenedor-acercade {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* BLOQUE DE HISTORIA */
+.bloque-historia {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.texto-historia {
+    flex: 1.2;
+}
+
+.texto-historia h2 {
+    color: #054b14;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.texto-historia p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.texto-historia p:last-child {
+    margin-bottom: 0;
+}
+
+.imagen-historia {
+    flex: 1;
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #ffbe0b;
+}
+
+.imagen-historia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECCIÓN COMPLETA DE GUÍA DE ATRACCIONES */
+.seccion-atracciones {
+    margin-top: 40px;
+}
+
+.titulo-seccion-interna {
+    text-align: center;
+    color: #054b14;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitulo-seccion-interna {
+    text-align: center;
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+/* GRILLA SÚPER RESPONSIVE */
+.grilla-atracciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* COMPORTAMIENTO DE TARJETAS INDIVIDUALES */
+.tarjeta-atraccion {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-atraccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.imagen-card-atraccion {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.imagen-card-atraccion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ETIQUETAS DE INTENSIDAD */
+.tag-intensidad {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* COLORES SEGÚN INTENSIDAD */
+.tarjeta-atraccion.extrema .tag-intensidad { background-color: #e63946; } 
+.tarjeta-atraccion.moderada .tag-intensidad { background-color: #fb5607; } 
+.tarjeta-atraccion.familiar .tag-intensidad { background-color: #054b14; } 
+
+/* COLOR Y DISEÑO DE LAS EXCLUSIVAS */
+.tarjeta-atraccion.exclusiva {
+    border: 2px solid #ffbe0b;
+    background-color: #fffdf5; 
+}
+
+.tag-intensidad.exclusivo {
+    background-color: #ffbe0b;
+    color: #000000;
+    font-size: 11.5px;
+}
+
+.contenido-card-atraccion {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contenido-card-atraccion h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contenido-card-atraccion p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE EXCLUSIVO */
+@media (max-width: 960px) {
+    .grilla-atracciones {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .bloque-historia {
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+    }
+    .imagen-historia {
+        width: 100%;
+        height: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grilla-atracciones {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}

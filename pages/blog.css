@@ -1,0 +1,166 @@
+.seccion-principal-blog {
+    padding: 60px 20px;
+    background-color: #f0fdf4; 
+    font-family: sans-serif;
+}
+
+.blog-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog-encabezado .titulo-seccion {
+    font-size: 32px;
+    color: #054b14; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.blog-encabezado .subtitulo-seccion {
+    font-size: 16px;
+    color: #666666;
+}
+
+.contenedor-blog {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CARACTERÍSTICAS DE CADA ENTRADA */
+.entrada-blog {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.entrada-blog:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-entrada {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.imagen-entrada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ETIQUETAS DINÁMICAS FLOTANTES */
+.categoria-etiqueta {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.categoria-etiqueta.inauguracion { background-color: #fb5607; } /* Naranja */
+.categoria-etiqueta.novedad { background-color: #054b14; }       /* Verde */
+.categoria-etiqueta.tip { background-color: #ffbe0b; color: #000000; } /* Amarillo */
+
+.contenido-entrada {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.fecha-entrada {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.contenido-entrada h2, .contenido-entrada h3 {
+    color: #333333;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.contenido-entrada h2 { font-size: 24px; }
+.contenido-entrada h3 { font-size: 20px; }
+
+.contenido-entrada p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN VER MÁS */
+.btn-leer-mas {
+    align-self: flex-start;
+    background-color: #054b14;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    margin-top: auto; 
+}
+
+.btn-leer-mas:hover {
+    background-color: #033a0f;
+}
+
+/* DISTRIBUCIÓN DE ENTRADAS */
+.entrada-blog.destacada {
+    flex-direction: row;
+    margin-bottom: 40px;
+    border-color: #ffbe0b; 
+    background-color: #fffdf5;
+}
+
+.entrada-blog.destacada .imagen-entrada {
+    flex: 1.2;
+    height: 350px;
+}
+
+.entrada-blog.destacada .contenido-entrada {
+    flex: 1;
+    padding: 35px;
+}
+
+.grilla-entradas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* RESPONSIVE EXCLUSIVO DEL BLOG */
+@media (max-width: 768px) {
+    .entrada-blog.destacada {
+        flex-direction: column;
+    }
+    .entrada-blog.destacada .imagen-entrada {
+        height: 220px;
+    }
+    .grilla-entradas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+

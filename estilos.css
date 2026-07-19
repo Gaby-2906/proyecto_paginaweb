@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LA BARRA DE NAVEGACIÓN */
+.barra-de-navegacion {
+    background-color: #054b14; 
+    height: 90px;              
+    padding: 0 40px;          
+    width: 100%;
+}
+
+.barra-de-navegacion ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item-logo {
+    width: 75px;  
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.item-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* LOS ENLACES DEL MENÚ */
+.barra-de-navegacion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+.barra-de-navegacion ul li a:hover {
+    color: #fb5607; 
+}
+
+/* EL BANNER */
+.contenedor-banner {
+    background-image: url('img/foto-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;       
+    height: 450px;     
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+}
+
+.contenedor-banner h1 {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.contenedor-banner p {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.boton-banner {
+    display: inline-block;
+    background-color: #ffbe0b; 
+    color: #000000;            
+    text-decoration: none;     
+    font-weight: bold;         
+    font-family: sans-serif;
+    font-size: 18px;           
+    margin: 20px;
+    padding: 10px 20px;        
+    border-radius: 5px;        
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-banner:hover {
+    background-color: #fb5607; 
+    transform: scale(1.05);    
+    color: #ffffff;            
+}
+
+/* SECCIÓN DE PRODUCTOS / PROMOCIONES */
+.seccion-promociones {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.seccion-promociones h2 {
+    color: #054b14; 
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-promo {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contenedor-promos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+/* TARJETAS DE PROMO */
+.tarjeta-promo {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 320px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-promo:hover {
+    transform: translateY(-5px); 
+}
+
+.tarjeta-promo.destacada {
+    border-color: #ffbe0b; 
+    background-color: #fffdf5;
+}
+
+.tarjeta-promo.destacada:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+.etiqueta-descuento {
+    position: absolute;
+    top: -15px;          
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e63946;  
+    color: #ffffff;             
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;        
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+.tarjeta-promo h3 {
+    margin-top: 10px;
+    color: #333333;
+    font-size: 22px;
+}
+
+.descripcion-promo {
+    color: #555555;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.aclaracion {
+    color: #999999;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.boton-promo {
+    background-color: #054b14;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.boton-promo:hover {
+    background-color: #033a0f;
+}
+
+/* CAJA DE SUSCRIPCIÓN DEL CLUB */
+.suscripcion {
+    width: 100%;
+    max-width: 1020px;
+    background-color: #afe224; 
+    color: #000000;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 25px 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.suscripcion h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.suscripcion p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.suscripcion form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.suscripcion input {
+    background-color: #7de293;
+    border: 2px solid #054b14;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 280px;
+    font-size: 14px;
+}
+
+.suscripcion button {
+    background-color: #054b14;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suscripcion button:hover {
+    background-color: #033a0f;
+}
+
+/* SECCIÓN DE RESEÑAS */
+.seccion-reseñas {
+    padding: 60px 20px;
+    background-color: #f0fdf4; 
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.seccion-reseñas h2 {
+    color: #054b14;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-reseñas {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contenedor-reseñas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tarjeta-reseña {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px; 
+    max-width: 340px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #ffbe0b; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.estrellas {
+    color: #ffbe0b; 
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.comentario {
+    font-style: italic;
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.usuario {
+    color: #054b14;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* FOOTER GENERAL */
+.pie-pagina {
+    background-color: #054b14; 
+    padding: 50px 40px 20px 40px;
+    color: #ffffff;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.footer-contenedor-columnas {
+    display: flex;
+    justify-content: space-between; 
+    gap: 60px;
+    flex-wrap: wrap; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+.columna-footer {
+    flex: 1; 
+    min-width: 280px; 
+}
+
+.columna-footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffbe0b; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.columna-footer p {
+    font-size: 15px;
+    margin: 5px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.direccion-footer {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.redes-footer a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes-footer a:hover {
+    background-color: #fb5607;
+    color: #ffffff;
+}
+
+.medios-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.medios-pago p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.logos-pagos-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logos-pagos-flex i {
+    font-size: 30px;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.logos-pagos-flex .img-pago {
+    display: inline-block;
+    height: 24px;
+    width: auto;
+    filter: grayscale(100%) brightness(140%);
+    transition: filter 0.3s;
+}
+
+.logos-pagos-flex i:hover {
+    color: #fb5607;
+}
+
+.logos-pagos-flex .img-pago:hover {
+    filter: none;
+}
+
+.separador-footer {
+    border: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 40px 0 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
+.contenedor-iframe {
+    border: 2px solid #ffbe0b; 
+    border-radius: 8px;        
+    overflow: hidden;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    margin-top: 15px;          
+    width: 100%;               
+}
+
+.contenedor-iframe iframe {
+    display: block;            
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .contenedor-banner h1 { font-size: 32px; }
+    .contenedor-banner p { font-size: 20px; }
+    .footer-contenedor-columnas { justify-content: center; gap: 30px; }
+}
+
+@media (max-width: 480px) {
+    .barra-de-navegacion { height: auto; padding: 15px 10px; }
+    .barra-de-navegacion ul { flex-direction: column; gap: 12px; }
+    .item-logo { width: 60px; height: 60px; }
+    .contenedor-banner { height: 350px; padding: 0 15px; }
+    .contenedor-banner h1 { font-size: 26px; }
+    .contenedor-banner p { font-size: 16px; }
+    .suscripcion { padding: 20px 15px; }
+    .suscripcion form { flex-direction: column; }
+    .suscripcion input { width: 100%; }
+    .columna-footer { min-width: 100%; }
+}

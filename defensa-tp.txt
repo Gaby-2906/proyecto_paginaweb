@@ -1,0 +1,56 @@
+Mi proyecto se llama Mundo Aventura es sobre un parque de diversiones ficticio 
+
+Para hacer el index en html: en el head utilice un favicon, lo vincule con un enlace de navegacion interna estilos.css y busque una libreria de imagenes para poner en el footer los medios de pago.
+Dentro del body en el header utilice la etiqueta nav para la barra de navegación, aplique lista desordenada y lista de items con los enlaces de referencia.
+Use la etiqueta main para el banner, las promociones, las promos, la suscripción y las reseñas.Dentro de main use etiquetas div para dividirlo con clases, la etiqueta <h1,h2..> que se usa para los titúlos, la etiqueta de parráfos,tambíen use section.En el banner use un enlace de navegación interna.
+Lo del enlace de navegación interna lo repeti para las promos.
+En la parte de suscripción incorpore un formulario con la etiqueta form puse de que tipo queria que fueran los datos que rellenara y un botón para enviar.
+La estructura del footer es similar a la que use en main con div que usan clases,etiquetas <h> para los títulos y tambíen tengo parráfos.
+Puse enlaces de Facebook, Instagram y tweeter.Utilice una librería para las imagenes de los medios de pago.Incorpore imagenes que descargue de mercado pago y cuenta dni.
+Con la etiqueta i frame puse la ubicación en el mapa del parque ficticio, busque una localización cercana a mi domicilio.
+Con la etiqueta hr separé el contenido.
+
+En estilos.css Separé completamente los estilos del HTML. No usé estilos en línea (inline styles) porque es una mala práctica; todo el diseño se controlan desde los archivos .css
+Use selector universal al principio para que se aplique a todo el html y que los margenes y el padding (espacio) comiencen en 0.
+Selector de etiqueta para que se aplique en todo el footer.
+Selector de clases lo use en casi todo el documento en la barra de navegación, el logo, el menú de navegación,en el banner, en la sección de promociones,en la sección de suscripción,en las reseñas, en el footer,etc.
+Paleta de colores: use principalmente el color verde para el header y footer con la propiedad background-color.El amarillo para el botón del banner. El naranja para que se posicione con el cursor con a:hover.
+Flexbox: se utilizó para la barra de navegación y para el logo con display:flex.Para alinear el texto adentro de la foto en el banner, para mostrar las tarjetas de promoción en fila.Para las reseñas y para el footer.
+
+En contacto.html en el head puse la etiqueta de favicon,el enlace de navegación interna que lo vincula con estilos.css.Dentro del body repeti las mismas etiquetas que use en el index. Lo mismo hice en el footer.
+En la etiqueta de navegación puse enlaces de navegación interna para vincularlo con el index y para acceder al logo de la carpeta de imagenes.
+Para el formulario lo encuadré en una etiqueta main. Para el formulario me registe en la página formspree.io y compartí el link en la etiqueta form action.La descripción en el input de lo que el usuario debe escribir nombre, email y el textarea que se usa para mandar mensajes.
+Para la caja contenedora del formulario utilicé un div con una clase, el input y un label vinculado con el input para recibir novedades.
+Para las imagenes de las redes sociales en el footer use una libreria de imagen y puse los links.Lo mismo hice para las tarjetas de debito y crédito y para otras billeteras virtuales.
+Utilicé dos enlaces de navegación interna para ir a la carpeta de img donde están las imagenes de mercado pago y cuenta dni.
+
+En contacto.css la barra de navegación es igual a la de estilos.css y el footer tambíen.
+Use selector de clases para todo el archivo.
+La paleta de colores es la misma que use en estilos.css para que tenga coherencia el diseño.Priorizando fundamentalmente el verde.
+Flexbox: para el formulario y para la caja contenedora.
+
+inconvenientes que tuve a lo largo del proyecto: me olvide poner los.. para la navegación interna y me rompia las imagenes, la barra de navegación y el banner. El banner me había quedado la imagen mas grande que la barra de navegación lo cual hacia que quede desprolijo.Tambíen tuve inconvenientes para acomodar las cajas de flexbox y ubicar el texto adentro de la caja.
+Use la ia para descargar las imagenes, para corrección de sintaxis, para que me ayude con flexbox.
+
+tienda.html tiene enlaces de navegación interna, barra de navegación, imágenes,un botón para abrir el carrito de compra,para cerrarlo, tiene una tabla donde se especifica el articulo,precio, cantidad, subtotal y quitar para eliminar el producto. El proyecto esta estructurado con div, h1, h2, etc para los títulos y subtitulos. y la etiqueta de párrafos.El footer es exactamente igual en todas las páginas. Tiene un enlace vinculado al archivo tienda.js.
+
+
+tienda.js: comienzo definiendo mediante una constante el array de objetos de productos de la tienda. Para los primeros 12 utilizo la api fakeStore.El resto los renderize con JavaScript.
+Utilice Async/Await funciones asincrónicas porque las peticiones web tardan tiempo en responder. Para evitar que la página se congele mientras espera los datos, el navegador "espera" en segundo plano.Use combinación de datos de la api mediante .map () con los productos locales. y para agregar las imágenes.
+Use try/catch Si la API se llega a caer (falla el try), el programa captura el error en el catch y carga los productos directamente desde nuestro array, asegurando que la página nunca se rompa ni quede en blanco."
+Use el renderizado mediante una función para limpiar el contenedor con .innerHTML = "".
+.forEach() para recorrer los productos. La función generarFiltros para no permitir elementos duplicados. El LocalStorage para que, si el usuario refresca la página, los productos que eligió no se borren.
+
+En blog.html lo diferente que agregue a la pagina es que agregue la etiqueta article para dividir los artículos del blog.
+Para blog.css: use los colores que y las fuentes que venia utilizando en index.html.Use flexbox y grid para la organización de las tarjetas.
+
+Acerca-de.html esta estructurado de la misma manera que index.html.
+Lo mismo Acerca-de.css que estilos.css para mantener la coherencia en el diseño.
+
+ 
+
+
+
+
+
+
